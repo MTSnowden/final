@@ -1,0 +1,29 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    height: 30vh;
+    width: 100%;
+    color: black;
+}
+
+.signature-flex {
+    display: grid;
+    margin: 0 auto;
+}
+.home-flex {
+    display: flex;
+    margin: 0 auto;
+}
+
+.title {
+    padding: 10px;
+    color: gray;
+    font-family: 'Orbitron';
+}
+
+.home-image {
+    margin: 0 auto;
+    border: 70px solid gray;
+
+}

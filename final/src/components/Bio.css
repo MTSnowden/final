@@ -1,0 +1,12 @@
+.bio-container {
+    display: block;
+  }
+  
+  .bio-flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bio-list {
+    list-style: none;
+  }

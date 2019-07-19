@@ -1,0 +1,8 @@
+.contact-container {
+    display: block;
+  }
+  
+  .contact-flex {
+    display: flex;
+    justify-content: center;
+  }

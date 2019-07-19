@@ -1,0 +1,8 @@
+.gallery-container {
+    display: block;
+  }
+  
+.gallery-flex {
+    display: flex;
+    justify-content: center;
+  }

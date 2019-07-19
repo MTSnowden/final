@@ -1,0 +1,8 @@
+.learn-container {
+    display: block;
+}
+  
+.learn-flex {
+    display: flex;
+    justify-content: center;
+}
