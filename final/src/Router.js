@@ -15,7 +15,7 @@ const Router = () => {
             <Route path='/gallery' component={Gallery}></Route>
             <Route path='/learn' component={Learn}></Route>
             <Route path='/login' component={Login}></Route>
-            <Route path='/contact' component={Contact}></Route>
+            {/* <Route path='/contact' component={Contact}></Route> */}
 
         </Switch>
     );
