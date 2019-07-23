@@ -7,7 +7,7 @@ const Learn = () => (
       <h1>Welcome to the learn page!</h1>
     </div>
     <div className="learn-flex">
-        <p>sign up for private art lessons</p>
+        <h2>sign up for private art lessons</h2>
     </div>
   </div>
 )

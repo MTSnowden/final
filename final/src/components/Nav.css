@@ -23,15 +23,19 @@ color: #272B34;
     grid-template-columns: 1fr 1fr;
     height: 70px;
     width: 100%;
-    font-family: 'Gruppo';
+    /* font-family: 'Gruppo'; */
     font-size: 20px;
     color: black;
     justify-content: space-evenly;
 }
 
-Link {
+a {
     display: inline;
-    padding: 30px;
+    padding-top: 15px;
+    color: gray;
+    font-family: 'Gruppo';
+    font-weight: bold;
+
 }
 
 .nav-left {
