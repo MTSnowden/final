@@ -4,11 +4,11 @@ import './Bio.css'
 const Bio = () => (
   <div className="bio-container">
     <div className="bio-flex">
-      <h1>Welcome to the biography page!</h1>
+      <h1>Michael Snowden</h1>
     </div>
     <div className="bio-flex">
       <div>
-        <p>Artist Statement</p>
+        <h2>Artist Statement</h2>
         <p>I'm an artist focusing in:</p>
         <ul className="bio-list">
           <li>painting</li>

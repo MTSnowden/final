@@ -34,7 +34,7 @@ class Login extends Component {
   }
 
   render() {
-    console.log(this.props.user)
+    console.log(this.props.user.userName)
     if (this.props.user.userName) {
 
       return (
