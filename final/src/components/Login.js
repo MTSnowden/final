@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { TextField, Button } from '@material-ui/core'
 import styled from 'styled-components'
+import Signup from './Signup'
 
 const FlexForm = styled.form`
   margin: 50px;
@@ -34,8 +35,8 @@ class Login extends Component {
   }
 
   render() {
-    console.log(this.props.user.userName)
-    if (this.props.user.userName) {
+    console.log(this.props.user)
+    if (this.props.user) {
 
       return (
         <Redirect to={{
@@ -62,6 +63,7 @@ class Login extends Component {
             <Button type="submit" variant="contained">Login</Button>
           </FlexForm>
           {this.state.message && <RedSpan>{this.state.message}</RedSpan>}
+          <Signup />
         </div>
       )
     }
