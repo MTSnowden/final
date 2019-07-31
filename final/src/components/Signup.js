@@ -28,6 +28,8 @@ class SignUp extends Component {
 
   signUp = (e) => {
     e.preventDefault()
+    console.log(this.props)
+
     this.props.signUp({ ...this.state })
       .catch(err => this.setState({ userName: '', password: '', message: err.response.data }))
   }

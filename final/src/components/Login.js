@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { TextField, Button } from '@material-ui/core'
 import styled from 'styled-components'
-import Signup from './Signup'
+import Signup from '../containers/Signup';
 
 const FlexForm = styled.form`
   margin: 50px;

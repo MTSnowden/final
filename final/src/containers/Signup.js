@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import SignUp from '../components/SignUp'
+import Signup from '../components/Signup'
 import { signUp } from '../redux/actions'
 
 const mapDispatchToProps = (dispatch) => {
@@ -8,4 +8,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(null, mapDispatchToProps)(SignUp)
+export default connect(null, mapDispatchToProps)(Signup)

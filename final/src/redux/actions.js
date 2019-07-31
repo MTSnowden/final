@@ -30,6 +30,7 @@ export function logout() {
 }
 
 export function signUp({ userName, password }) {
+  console.log("ACTIONS:", userName, password)
   return dispatch => {
     return axios({
       url: '/auth/signup',
