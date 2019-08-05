@@ -21,7 +21,7 @@ const styles = {
   gridTemplateColumns: '1fr 1fr',
   justifyContent: 'space-evenly',
   fontSize: '30px',
-  marginTop: '60px'
+  marginTop: '20px'
 }
 
 const leftStyles = {

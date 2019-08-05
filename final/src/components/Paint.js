@@ -10,7 +10,7 @@ export default class PaintGallery extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://react-hacker.danzuzevich.com/thumbnails')
+        axios.get('')
         .then(res => {
             this.setState({ thumbnails: res.data.thumbnails })
         })

@@ -5,7 +5,7 @@ import './Learn.css'
 const Learn = () => (
   <div className="learn-container">
 
-    <div className="llearn-flex" style={titleStyles}>
+    <div className="learn-flex" style={titleStyles}>
       <h3>Private Drawing Lessons</h3>
     </div>
 
@@ -32,13 +32,28 @@ const Learn = () => (
             their desired achievements. I will design a personalized 
             curriculum to fit your needs and provide all supplies.
             We will learn how to draw from real life/still life 
-            on paper with graphite, ink and charcoal. 
+            on archive quality paper with graphite, ink and charcoal. 
             I will give lessons on perspective, line, 
             volume, and composition in a way that is practical 
             and easy to understand. We will explore the science of 
             optics and how our eyes work with the brain to make sense 
             of the phisical world around us.
           </p>
+        </div>
+      </div>
+
+      <div className="lesson-packages-container" style={lessonPackagesStyles}>
+        <div className="option" style={option}>
+          <h4>1 One-Hour Lesson</h4>
+          <h3>$50</h3>
+        </div>
+        <div className="option" style={option}>
+          <h4>3 One-Hour Lessons</h4>
+          <h3>$100</h3>
+        </div>
+        <div className="option" style={option}>
+          <h4>10 One-Hour Lessons</h4>
+          <h3>$300</h3>
         </div>
       </div>
     </div>
@@ -50,7 +65,7 @@ const titleStyles = {
   display: 'flex',
   width: '500px',
   fontFamily: 'Dosis',
-  marginLeft: '400px',
+  margin: '0 auto',
   marginBottom: '20px'
 }
 
@@ -61,7 +76,7 @@ const learnBodyStyles = {
 const learnStylesOne = {
   height: '130px',
   width: '500px',
-  marginLeft: '270px',
+  margin: '0 auto',
   marginTop: '50px',
   fontFamily: 'Dosis'
 }
@@ -69,14 +84,29 @@ const learnStylesOne = {
 const learnStylesTwo = {
   height: '230px',
   width: '500px',
-  marginLeft: '270px',
+  margin: '0 auto',
   fontFamily: 'Dosis'
 }
 
 const learnImageStyles = {
   height: '290px',
   width: '500px',
-  marginLeft: '240px'
+  margin: '0 auto'
+}
+
+const lessonPackagesStyles = {
+  height: '290px',
+  width: '500px',
+  margin: '0 auto',
+  display: 'flex',
+  justifyContent: 'center'
+}
+
+const option = {
+  height: '150px',
+  border: '3px solid grey',
+  margin: '10px',
+  alignContent: 'center'
 }
 
 export default Learn
