@@ -3,15 +3,18 @@ import './Gallery.css'
 import { BrowserRouter } from 'react-router-dom'
 import GalleryRouter from '../GalleryRouter'
 import GalleryNav from './GalleryNav';
+import PaintGallery from './Paint';
 
 class Gallery extends Component {
   render() {
     return (
       <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <GalleryNav />
       <GalleryRouter />
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <PaintGallery />
+      
       </div>
     )
   }

@@ -8,8 +8,8 @@ const Bio = () => (
     </div>
     <div className="bio-flex">
       <div>
-        <h2>Artist Statement</h2>
-        <p>I'm an artist focusing in:</p>
+        <h2>Artist statement and bio will go here</h2>
+        <p></p>
         {/* <ul className="bio-list">
           <li>painting</li>
           <li>drawing</li>
