@@ -8,6 +8,7 @@ import Gallery from './components/Gallery'
 import Learn from './components/Learn'
 // import Login from './containers/Login'
 import Login from './components/Login'
+import Paint from './components/Paint'
 import Dashboard from './containers/Dashboard'
 // import Contact from './components/Contact'
 
@@ -33,6 +34,8 @@ const Router = () => {
             <Route path='/gallery' component={Gallery}></Route>
             <Route path='/learn' component={Learn}></Route>
             <Route path='/login' component={Login}></Route>
+            <Route path='/paint' component={Paint}></Route>
+
             {/* <Route path='/contact' component={Contact}></Route> */}
         </Switch>
     );

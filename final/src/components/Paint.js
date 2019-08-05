@@ -1,14 +1,34 @@
-import React from 'react'
+import React, { Component } from 'react'
+// import ThumbnailGalleryStyles from ''
+import PaintActiveWindow from './PaintActiveWindow'
+import PaintTumbnailGrid from './PaintThumbnailGrid'
 
-export default function Paint() {
-    return (
-        <div>
-            <h1>Welcome to the Painting page</h1>
-            <p>Here I'll have pictures of paintings that I've done</p>
-            <p>im thinking either grid style or a single
-                image feed like instagram. Maybe have an option for 
-                visitors to comment on image or purchase the piece.
-            </p>
-        </div>
-    )
+
+export default class PaintGallery extends Component {
+    render() {
+        return (
+            <div style={ThumbnailGalleryStyles}>
+
+        {/* Left Side */}
+            <div style={{ flex: 1}}>
+                <PaintActiveWindow />
+                <PaintTumbnailGrid />           
+            </div>
+            
+        {/* Right Side */}
+            <div style={{ flex: 1}}>
+                Right
+            </div>
+            
+            </div>
+        )
+    }
+}
+
+const ThumbnailGalleryStyles = {
+    background: '#ddd',
+    height: '500px',
+    width: '1024px',
+    margin: '40px auto',
+    display: 'flex'
 }
