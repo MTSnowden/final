@@ -3,15 +3,15 @@ import React from 'react'
 
 const PaintActiveWindow = () => {
     return (
-        <div>
+        <div style={ styles }>
             Active Paint Thumbnail
         </div>
     )
 }
 
-const PaintActiveWindowStyles = {
+const styles = {
     height: '65%',
     width: '100%',
-    background: '#333'
+    background: '#666'
 }
 export default PaintActiveWindow

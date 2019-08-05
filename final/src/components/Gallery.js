@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './Gallery.css'
+import { BrowserRouter } from 'react-router-dom'
+import GalleryRouter from '../GalleryRouter'
+import GalleryNav from './GalleryNav';
 
-const Gallery = () => (
-  <div className="gallery-container">
-    <div className="gallery-flex">
-      <h1>paint   draw   sculpt</h1>
-    </div>
-    <div className="gallery-flex">
-        
-    </div>
-  </div>
-)
+class Gallery extends Component {
+  render() {
+    return (
+      <div>
+      <BrowserRouter>
+      <GalleryNav />
 
-export default Gallery
+      </BrowserRouter>
+      </div>
+    )
+}
+}
+
+
+
+export default Gallery;

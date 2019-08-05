@@ -1,23 +1,35 @@
 import React, { Component } from 'react'
-// import ThumbnailGalleryStyles from ''
 import PaintActiveWindow from './PaintActiveWindow'
 import PaintTumbnailGrid from './PaintThumbnailGrid'
-
+import axios from 'axios'
 
 export default class PaintGallery extends Component {
+    
+    state = {
+        thumbnails: []
+    }
+
+    componentDidMount() {
+        axios.get('https://react-hacker.danzuzevich.com/thumbnails')
+        .then(res => {
+            this.setState({ thumbnails: res.data.thumbnails })
+        })
+    }
+    
     render() {
+        console.log(this.state.thumbnails)
         return (
             <div style={ThumbnailGalleryStyles}>
 
         {/* Left Side */}
-            <div style={{ flex: 1}}>
+            <div style={{ flex: 1.5}}>
                 <PaintActiveWindow />
                 <PaintTumbnailGrid />           
             </div>
             
         {/* Right Side */}
-            <div style={{ flex: 1}}>
-                Right
+            <div style={{ flex: 1, padding:'40px'}}>
+                Some text about the image
             </div>
             
             </div>

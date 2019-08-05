@@ -1,18 +1,29 @@
 import React from 'react'
 // imr 
+import PaintThumbnail from './PaintThumbnail'
 
 const PaintThumbnailGrid = () => {
     return (
-        <div>
-            Paint Thumbnail Grid
+        <div style={ styles }>
+         <PaintThumbnail />
+         <PaintThumbnail />
+         <PaintThumbnail />
+         <PaintThumbnail />
+
+         <PaintThumbnail />
+         <PaintThumbnail />
+         <PaintThumbnail />
+         <PaintThumbnail />
         </div>
     )
 }
 
-const PaintThumbnailGridStyles = {
+const styles = {
     height: '35%',
     width: '100%',
-    background: '#555'
+    background: 'yellow',
+    display: 'flex',
+    flexWrap: 'wrap'
 }
 
 export default PaintThumbnailGrid
