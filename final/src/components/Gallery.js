@@ -10,11 +10,11 @@ class Gallery extends Component {
       <div>
       <BrowserRouter>
       <GalleryNav />
-
+      <GalleryRouter />
       </BrowserRouter>
       </div>
     )
-}
+  }
 }
 
 

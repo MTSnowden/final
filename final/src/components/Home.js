@@ -1,6 +1,7 @@
 import React from 'react'
 import Signature from '../images/signature.png'
-import Wasp from '../images/main-pic.png'
+// import Wasp from '../images/main-pic.png'
+import forCarlo from '../final-img/forCarlo.JPG'
 import './Home.css'
 
 const Home = () => (
@@ -19,7 +20,7 @@ const Home = () => (
     </div>
 
     <div className="home-image">
-        <img id="main-image" src={Wasp} alt="wasp drawing"></img>
+        <img id="main-image" src={forCarlo} alt="abstract-painting"></img>
     </div>
   </div>
 )

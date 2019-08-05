@@ -26,6 +26,5 @@
 .home-image {
     margin: 0 auto;
     /* border: 70px solid #D0D4CF; */
-    border: 70px solid gray;
-
+    border: 70px solid rgba(49, 46, 38, 0.877);
 }
