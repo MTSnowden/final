@@ -1,27 +1,46 @@
 import React, { Component } from 'react'
-import PaintActiveWindow from './PaintActiveWindow'
-import PaintThumbnailGrid from './PaintThumbnailGrid'
 import ReactBnbGallery from 'react-bnb-gallery'
 import forCarlo from '../final-img/forCarlo.JPG'
-import one from '../final-img/IMG_0016.JPG'
+import one from '../final-img/paint1.JPG'
+import two from '../final-img/paint2.JPG'
+import three from '../final-img/paint3.jpg'
+import four from '../final-img/paint4.PNG'
+import five from '../final-img/paint5.PNG'
 
 
 const photos = [{
     photo:  forCarlo,
-    caption: "Viñales, Pinar del Río, Cuba",
-    subcaption: "Photo by Simon Matzinger on Unsplash",
+    caption: "For Carlo",
+    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
     thumbnail: forCarlo,
   }, {
     photo: one,
-    caption: "yello",
-    subcaption: "Photo by Gerardo Sanchez on Unsplash",
+    caption: "For Dottie",
+    subcaption: "Acrylic, latex and paper on canvas - 2015",
     thumbnail: one,
   }, {
-    photo: "https://source.unsplash.com/QdBHnkBdu4g/1144x763",
-    caption: "Woman smoking a tobacco",
-    subcaption: "Photo by Hannah Cauhepe on Unsplash",
-    thumbnail: "https://source.unsplash.com/QdBHnkBdu4g/100x67",
-  }];
+    photo: two,
+    caption: "Thesis",
+    subcaption: "Acrylic, cement dye, cardboard, string and paper on canvas - 2012",
+    thumbnail: two,
+  }, {
+    photo: three,
+    caption: "Central Park",
+    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
+    thumbnail: three,
+  },{
+    photo: four,
+    caption: "For Dad",
+    subcaption: "Acrylic, latex, paper, cardboard, silver leaf and string on canvas - 2013",
+    thumbnail: four,
+  },{
+    photo: five,
+    caption: "First Abstraction",
+    subcaption: "Acrylic and latex on canvas - 2010",
+    thumbnail: five,
+  }
+
+];
 
 export default class PaintGallery extends Component {
     
@@ -40,43 +59,23 @@ export default class PaintGallery extends Component {
     
     render() {
 
-        return (
-        //     <div style={ThumbnailGalleryStyles}>
-
-        // {/* Left Side */}
-        //     <div style={{ flex: 1.5}}>
-        //         <PaintActiveWindow />
-        //         <PaintThumbnailGrid />           
-        //     </div>
-            
-        // {/* Right Side */}
-        //     <div style={{ flex: 1, padding:'40px'}}>
-        //         Some text about the image
-        //     </div>
-            
-        //     </div>
+     return (
         <div>
-        <button onClick={this.toggleGallery} style={style}>paint</button>
-        <ReactBnbGallery
-          show={this.state.galleryOpened}
-          photos={photos}
-          onClose={this.toggleGallery} />
-            </div>
-        )
+         <button onClick={this.toggleGallery} style={style}>painting</button>
+            <ReactBnbGallery
+            show={this.state.galleryOpened}
+            photos={photos}
+            onClose={this.toggleGallery} />
+        </div>
+     )
     }
 }
 
 
-const style ={
+const style = {
 
     fontFamily: 'Orbitron',
-    border: 'none'
+    border: 'none',
+    color: 'grey'
 }
 
-// const ThumbnailGalleryStyles = {
-//     background: '#ddd',
-//     height: '500px',
-//     width: '1024px',
-//     margin: '40px auto',
-//     display: 'flex'
-// }

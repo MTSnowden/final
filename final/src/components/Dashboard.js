@@ -54,11 +54,13 @@ class Dashboard extends Component {
   render() {
     return (
       <Fragment>
+        <Button variant="contained" 
+                onClick={this.logout}>Logout</Button>
         <Wrapper>
           <Card>
             <CardHeader
-              title={`Welcome ${this.props.user.userName}`}
-              subheader="Please review your details below:"
+              title={`Welcome ${this.props.user.userName}!`}
+              subheader="I'm excited to be working wtih you!"
             />
             <CardContent>
               <p>Username: {this.props.user.userName}</p>
@@ -86,7 +88,7 @@ class Dashboard extends Component {
             </FlexForm>
           </div>
         </Wrapper>
-        <Button variant="contained" onClick={this.logout}>Logout</Button>
+        {/* <Button variant="contained" onClick={this.logout}>Logout</Button> */}
       </Fragment>
     )
   }

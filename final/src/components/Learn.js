@@ -1,6 +1,8 @@
 import React from 'react'
 import Hand from '../final-img/drawing-hand.png'
 import './Learn.css'
+// import { Card, Button, Img, Body,  } from 'bootstrap'
+
 
 const Learn = () => (
   <div className="learn-container">
@@ -9,7 +11,9 @@ const Learn = () => (
       <h3>Private Drawing Lessons</h3>
     </div>
 
+
     <div className='learn-body' style={learnBodyStyles}>
+      
       <div className="learn-image" style={learnImageStyles}>
           <img id="main-image" src={Hand} alt="hand-drawing"></img>
       </div>
@@ -35,15 +39,30 @@ const Learn = () => (
             on archive quality paper with graphite, ink and charcoal. 
             I will give lessons on perspective, line, 
             volume, and composition in a way that is practical 
-            and easy to understand. We will explore the science of 
+            and easy to understand. 
+            
+            {/* We will explore the science of 
             optics and how our eyes work with the brain to make sense 
-            of the phisical world around us.
+            of the phisical world around us. */}
           </p>
         </div>
       </div>
 
       <div className="lesson-packages-container" style={lessonPackagesStyles}>
-        <div className="option" style={option}>
+        {/* <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="holder.js/100px180" />
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+              <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of
+              the card's content.
+              </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card> */}
+
+
+        {/* <div className="option" style={option}>
           <h4>1 One-Hour Lesson</h4>
           <h3>$50</h3>
         </div>
@@ -54,7 +73,7 @@ const Learn = () => (
         <div className="option" style={option}>
           <h4>10 One-Hour Lessons</h4>
           <h3>$300</h3>
-        </div>
+        </div> */}
       </div>
     </div>
 
@@ -63,7 +82,7 @@ const Learn = () => (
 
 const titleStyles = {
   display: 'flex',
-  width: '500px',
+  width: '75%',
   fontFamily: 'Dosis',
   margin: '0 auto',
   marginBottom: '20px'
@@ -71,42 +90,42 @@ const titleStyles = {
 
 const learnBodyStyles = {
   // display: 'flex'
-}
-
-const learnStylesOne = {
   height: '130px',
-  width: '500px',
+  width: '600px',
   margin: '0 auto',
   marginTop: '50px',
   fontFamily: 'Dosis'
 }
 
+const learnStylesOne = {
+  // height: '130px',
+  // width: '500px',
+  // margin: '0 auto',
+  // marginTop: '50px',
+  // fontFamily: 'Dosis'
+}
+
 const learnStylesTwo = {
-  height: '230px',
-  width: '500px',
-  margin: '0 auto',
-  fontFamily: 'Dosis'
+  height: '430px',
+  // width: '500px',
+  // margin: '0 auto',
+  // fontFamily: 'Dosis'
 }
 
 const learnImageStyles = {
-  height: '290px',
-  width: '500px',
+  // height: '290px',
+  // width: '500px',
   margin: '0 auto'
 }
 
 const lessonPackagesStyles = {
-  height: '290px',
-  width: '500px',
-  margin: '0 auto',
-  display: 'flex',
-  justifyContent: 'center'
+  // height: '290px',
+  // width: '500px',
+  // margin: '0 auto',
+  // display: 'flex',
+  // justifyContent: 'center'
 }
 
-const option = {
-  height: '150px',
-  border: '3px solid grey',
-  margin: '10px',
-  alignContent: 'center'
-}
+
 
 export default Learn

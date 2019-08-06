@@ -1,28 +1,34 @@
 import React, { Component } from 'react'
 import ReactBnbGallery from 'react-bnb-gallery'
-import draw1 from '../final-img/draw1.PNG'
-import draw2 from '../final-img/draw2.PNG'
-import draw3 from '../final-img/draw3.PNG'
+import ceramic1 from '../final-img/ceramic1.PNG'
+import ceramic2 from '../final-img/ceramic2.PNG'
+import ceramic3 from '../final-img/ceramic3.PNG'
+import ceramic4 from '../final-img/ceramic4.PNG'
 
 
 const photos = [{
-    photo:  draw1,
+    photo:  ceramic1,
     caption: "Autry-Williams Wigwam",
     subcaption: "Charcoal on paper - 2012",
-    thumbnail: draw1,
+    thumbnail: ceramic1,
   }, {
-    photo: draw2,
+    photo: ceramic2,
     caption: "Impending Doom",
     subcaption: "Charcoal on paper - 2012",
-    thumbnail: draw2,
+    thumbnail: ceramic2,
   }, {
-    photo: draw3,
+    photo: ceramic3,
     caption: "Interior",
     subcaption: "Charcoal on paper - 2012",
-    thumbnail: draw3,
+    thumbnail: ceramic3,
+  },{
+    photo: ceramic4,
+    caption: "Interior",
+    subcaption: "Charcoal on paper - 2012",
+    thumbnail: ceramic4,
   }]
 
-export default class DrawGallery extends Component {
+export default class CeramicGallery extends Component {
     
     constructor() {
         super(...arguments);
@@ -41,7 +47,7 @@ export default class DrawGallery extends Component {
 
      return (
         <div>
-         <button onClick={this.toggleGallery} style={style}>drawing</button>
+         <button onClick={this.toggleGallery} style={style}>ceramic</button>
             <ReactBnbGallery
             show={this.state.galleryOpened}
             photos={photos}
@@ -52,6 +58,7 @@ export default class DrawGallery extends Component {
 }
 
 const style = {
+
     fontFamily: 'Orbitron',
     border: 'none',
     color: 'grey'
