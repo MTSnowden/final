@@ -1,7 +1,7 @@
 import React from 'react'
 import Hand from '../final-img/drawing-hand.png'
 import './Learn.css'
-// import { Card, Button, Img, Body,  } from 'bootstrap'
+import { Card, Button  } from 'react-bootstrap'
 // 
 
 const Learn = () => (
@@ -49,20 +49,35 @@ const Learn = () => (
       </div>
 
       <div className="lesson-packages-container" style={lessonPackagesStyles}>
-        {/* <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="holder.js/100px180" />
+        <Card style={{ width: '14rem', height: '10rem' }}>
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-              </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Card.Title>1 One Hour Lesson</Card.Title>
+            <Card.Title>$30</Card.Title>
+              <Card.Text></Card.Text>
+            <Button variant="secondary">Purchase</Button>
           </Card.Body>
-        </Card> */}
+        </Card>
+
+         <Card style={{ width: '14rem', height: '10rem' }}>
+          <Card.Body>
+            <Card.Title>3 One Hour Lessons</Card.Title>
+            <Card.Title>$75</Card.Title>
+              <Card.Text></Card.Text>
+            <Button variant="secondary">Purchase</Button>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '14rem', height: '10rem' }}>
+          <Card.Body>
+            <Card.Title>5 One Hour Lessons</Card.Title>
+            <Card.Title>$130</Card.Title>
+              <Card.Text></Card.Text>
+            <Button variant="secondary">Purchase</Button>
+          </Card.Body>
+        </Card>
 
 
-        <div className="option" style={option}>
+        {/* <div className="option" style={option}>
           <h4>1 One-Hour Lesson</h4>
           <h3>$30</h3>
         </div>
@@ -73,7 +88,7 @@ const Learn = () => (
         <div className="option" style={option}>
           <h4>5 One-Hour Lessons</h4>
           <h3>$130</h3>
-        </div>
+        </div> */}
       </div>
     </div>
 
@@ -101,12 +116,12 @@ const learnStylesOne = {
   // height: '130px',
   // width: '500px',
   // margin: '0 auto',
-  // marginTop: '50px',
+  marginTop: '50px',
   // fontFamily: 'Dosis'
 }
 
 const learnStylesTwo = {
-  height: '430px',
+  height: '230px',
   // width: '500px',
   // margin: '0 auto',
   // fontFamily: 'Dosis'
@@ -126,11 +141,11 @@ const lessonPackagesStyles = {
   justifyContent: 'center'
 }
 
-const option = {
-  height: '200px',
-  width: '200px',
-  border: '2px solid grey'
-}
+// const option = {
+//   height: '200px',
+//   width: '200px',
+//   border: '2px solid grey'
+// }
 
 
 export default Learn
