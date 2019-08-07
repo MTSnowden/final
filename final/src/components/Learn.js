@@ -72,7 +72,8 @@ const Learn = () => (
             <Card.Title>5 One Hour Lessons</Card.Title>
             <Card.Title>$130</Card.Title>
               <Card.Text></Card.Text>
-            <Button variant="secondary">Purchase</Button>
+            <Button variant="secondary"
+                    >Purchase</Button>
           </Card.Body>
         </Card>
 
@@ -105,7 +106,7 @@ const titleStyles = {
 
 const learnBodyStyles = {
   // display: 'flex'
-  height: '130px',
+  height: '80px',
   width: '600px',
   margin: '0 auto',
   marginTop: '50px',
@@ -121,7 +122,7 @@ const learnStylesOne = {
 }
 
 const learnStylesTwo = {
-  height: '230px',
+  height: '170px',
   // width: '500px',
   // margin: '0 auto',
   // fontFamily: 'Dosis'

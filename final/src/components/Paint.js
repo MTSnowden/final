@@ -13,17 +13,17 @@ import room3 from '../final-img/room3.png'
 
 const photos = [{
     photo:  room1,
-    caption: "Ethereal",
-    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
+    caption: "First Abstraction",
+    subcaption: "Acrylic, latex house paint, paper, cardboard and string on canvas - 2012 ",
     thumbnail: room1,
   }, {
     photo: room2,
-    caption: "For Dottie",
+    caption: "Yellowstone",
     subcaption: "Acrylic, latex and paper on canvas - 2015",
     thumbnail: room2,
   }, {
     photo: room3,
-    caption: "Thesis",
+    caption: "For Carlo",
     subcaption: "Acrylic, cement dye, cardboard, string and paper on canvas - 2012",
     thumbnail: room3,
   }, {

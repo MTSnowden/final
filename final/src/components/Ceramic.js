@@ -8,23 +8,23 @@ import ceramic4 from '../final-img/ceramic4.PNG'
 
 const photos = [{
     photo:  ceramic1,
-    caption: "Autry-Williams Wigwam",
-    subcaption: "Charcoal on paper - 2012",
+    caption: "Pinch pot",
+    subcaption: "2012",
     thumbnail: ceramic1,
   }, {
     photo: ceramic2,
-    caption: "Impending Doom",
-    subcaption: "Charcoal on paper - 2012",
+    caption: "Box",
+    subcaption: "2012",
     thumbnail: ceramic2,
   }, {
     photo: ceramic3,
-    caption: "Interior",
-    subcaption: "Charcoal on paper - 2012",
+    caption: "Bowl",
+    subcaption: "2012",
     thumbnail: ceramic3,
   },{
     photo: ceramic4,
-    caption: "Interior",
-    subcaption: "Charcoal on paper - 2012",
+    caption: "For Mom",
+    subcaption: "2012",
     thumbnail: ceramic4,
   }]
 
