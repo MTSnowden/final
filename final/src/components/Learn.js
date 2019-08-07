@@ -21,11 +21,11 @@ const Learn = () => (
       <div className="learn-text-container">
         <div className="learn-flex" style={learnStylesOne}>
           <p>I believe that anyone can learn to draw.
+            Drawing is one of my favorite practices and I love helping others 
+            take what they see and express that through their own hands.
             A classically trained artist and former high school 
             art educator, I teach traditional methods of 
-            representational drawing. Drawing is one 
-            of my favorite practices and I love helping others 
-            take what they see and express that through their own hands.
+            representational drawing. 
           </p>
         </div>
 
