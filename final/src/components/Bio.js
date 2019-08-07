@@ -1,5 +1,6 @@
 import React from 'react'
 import './Bio.css'
+import grass from '../final-img/grass.jpg'
 
 const Bio = () => (
   <div className="bio-container">
@@ -10,6 +11,10 @@ const Bio = () => (
       <div>
         {/* <h2>title</h2> */}
         <hr />
+        <div className='pic' style={picStyle}>
+        <img src={grass}></img>
+        </div>
+        
         <div>
           <p>I attended Lamar University in Beaumont, Texas where I earned a 
             Bachelor of Fine Arts degree in Studio Art with a minor in Earth Science.
@@ -50,9 +55,14 @@ const Bio = () => (
 )
 
 const style = {
-  display: 'block',
+  // display: 'block',
   margin: '0 auto',
   // fontFamily: 'Dosis',
+  width: '70%'
+}
+
+const picStyle = {
+  margin: '0 auto',
   width: '70%'
 }
 

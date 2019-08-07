@@ -2,7 +2,7 @@ import React from 'react'
 import Hand from '../final-img/drawing-hand.png'
 import './Learn.css'
 // import { Card, Button, Img, Body,  } from 'bootstrap'
-
+// 
 
 const Learn = () => (
   <div className="learn-container">
@@ -62,18 +62,18 @@ const Learn = () => (
         </Card> */}
 
 
-        {/* <div className="option" style={option}>
+        <div className="option" style={option}>
           <h4>1 One-Hour Lesson</h4>
-          <h3>$50</h3>
+          <h3>$30</h3>
         </div>
         <div className="option" style={option}>
           <h4>3 One-Hour Lessons</h4>
-          <h3>$100</h3>
+          <h3>$75</h3>
         </div>
         <div className="option" style={option}>
-          <h4>10 One-Hour Lessons</h4>
-          <h3>$300</h3>
-        </div> */}
+          <h4>5 One-Hour Lessons</h4>
+          <h3>$130</h3>
+        </div>
       </div>
     </div>
 
@@ -121,11 +121,16 @@ const learnImageStyles = {
 const lessonPackagesStyles = {
   // height: '290px',
   // width: '500px',
-  // margin: '0 auto',
-  // display: 'flex',
-  // justifyContent: 'center'
+  margin: '0 auto',
+  display: 'flex',
+  justifyContent: 'center'
 }
 
+const option = {
+  height: '200px',
+  width: '200px',
+  border: '2px solid grey'
+}
 
 
 export default Learn

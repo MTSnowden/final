@@ -1,28 +1,31 @@
 import React, { Component } from 'react'
 import ReactBnbGallery from 'react-bnb-gallery'
-import forCarlo from '../final-img/forCarlo.JPG'
-import one from '../final-img/paint1.JPG'
-import two from '../final-img/paint2.JPG'
+// import forCarlo from '../final-img/forCarlo.JPG'
+// import one from '../final-img/paint1.JPG'
+// import two from '../final-img/paint2.JPG'
 import three from '../final-img/paint3.jpg'
 import four from '../final-img/paint4.PNG'
 import five from '../final-img/paint5.PNG'
+import room1 from '../final-img/room1.png'
+import room2 from '../final-img/room2.png'
+import room3 from '../final-img/room3.png'
 
 
 const photos = [{
-    photo:  forCarlo,
-    caption: "For Carlo",
+    photo:  room1,
+    caption: "Ethereal",
     subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
-    thumbnail: forCarlo,
+    thumbnail: room1,
   }, {
-    photo: one,
+    photo: room2,
     caption: "For Dottie",
     subcaption: "Acrylic, latex and paper on canvas - 2015",
-    thumbnail: one,
+    thumbnail: room2,
   }, {
-    photo: two,
+    photo: room3,
     caption: "Thesis",
     subcaption: "Acrylic, cement dye, cardboard, string and paper on canvas - 2012",
-    thumbnail: two,
+    thumbnail: room3,
   }, {
     photo: three,
     caption: "Central Park",
@@ -73,7 +76,6 @@ export default class PaintGallery extends Component {
 
 
 const style = {
-
     fontFamily: 'Orbitron',
     border: 'none',
     color: 'grey'
