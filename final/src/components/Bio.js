@@ -11,9 +11,9 @@ const Bio = () => (
       <div>
         {/* <h2>title</h2> */}
         <hr />
-        <div className='pic' style={picStyle}>
+        {/* <div className='pic' style={picStyle}>
         <img src={grass}></img>
-        </div>
+        </div> */}
         
         <div>
           <p>I attended Lamar University in Beaumont, Texas where I earned a 
@@ -45,7 +45,7 @@ const Bio = () => (
             Linear elements dominated the compositions, reminiscent of dynamic
             inner-city maps and topographic renderings. The surfaces became 
             highly textured, having many layers of paper, paint, cardboard and string.
-            My process became became more physical, ripping and sanding away 
+            My process became more physical, ripping and sanding away 
             exposing the colorful layers that lie beneath.
           </p>
         </div>

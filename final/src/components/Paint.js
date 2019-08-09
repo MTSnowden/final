@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactBnbGallery from 'react-bnb-gallery'
 // import forCarlo from '../final-img/forCarlo.JPG'
-// import one from '../final-img/paint1.JPG'
+import paint1 from '../final-img/paint1.JPG'
 // import two from '../final-img/paint2.JPG'
 import three from '../final-img/paint3.jpg'
 import four from '../final-img/paint4.PNG'
@@ -14,13 +14,23 @@ import room3 from '../final-img/room3.png'
 const photos = [{
     photo:  room1,
     caption: "First Abstraction",
-    subcaption: "Acrylic, latex house paint, paper, cardboard and string on canvas - 2012 ",
+    subcaption: "Acrylic, latex house paint, paper, cardboard and string on canvas - 2009",
     thumbnail: room1,
+  }, {
+    photo: five,
+    caption: "First Abstraction",
+    subcaption: "Acrylic, latex house paint, paper, cardboard and string on canvas - 2009",
+    thumbnail: five,
   }, {
     photo: room2,
     caption: "Yellowstone",
     subcaption: "Acrylic, latex and paper on canvas - 2015",
     thumbnail: room2,
+  }, {
+    photo: paint1,
+    caption: "Yellowstone",
+    subcaption: "Acrylic, latex and paper on canvas - 2015",
+    thumbnail: paint1,
   }, {
     photo: room3,
     caption: "For Carlo",
@@ -36,13 +46,7 @@ const photos = [{
     caption: "For Dad",
     subcaption: "Acrylic, latex, paper, cardboard, silver leaf and string on canvas - 2013",
     thumbnail: four,
-  },{
-    photo: five,
-    caption: "First Abstraction",
-    subcaption: "Acrylic and latex on canvas - 2010",
-    thumbnail: five,
   }
-
 ];
 
 export default class PaintGallery extends Component {

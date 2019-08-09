@@ -49,7 +49,7 @@ const Learn = () => (
       </div>
 
       <div className="lesson-packages-container" style={lessonPackagesStyles}>
-        <Card style={{ width: '14rem', height: '10rem' }}>
+        <Card style={{ width: '14rem', height: '12rem' }}>
           <Card.Body>
             <Card.Title>1 One Hour Lesson</Card.Title>
             <Card.Title>$30</Card.Title>
@@ -58,7 +58,7 @@ const Learn = () => (
           </Card.Body>
         </Card>
 
-         <Card style={{ width: '14rem', height: '10rem' }}>
+         <Card style={{ width: '14rem', height: '12rem' }}>
           <Card.Body>
             <Card.Title>3 One Hour Lessons</Card.Title>
             <Card.Title>$75</Card.Title>
@@ -67,7 +67,7 @@ const Learn = () => (
           </Card.Body>
         </Card>
 
-        <Card style={{ width: '14rem', height: '10rem' }}>
+        <Card style={{ width: '14rem', height: '12rem' }}>
           <Card.Body>
             <Card.Title>5 One Hour Lessons</Card.Title>
             <Card.Title>$130</Card.Title>
@@ -101,7 +101,8 @@ const titleStyles = {
   width: '75%',
   fontFamily: 'Dosis',
   margin: '0 auto',
-  marginBottom: '20px'
+  marginBottom: '20px',
+  paddingLeft: '40px'
 }
 
 const learnBodyStyles = {
@@ -117,12 +118,14 @@ const learnStylesOne = {
   // height: '130px',
   // width: '500px',
   // margin: '0 auto',
+  paddingLeft: '50px',
   marginTop: '50px',
   // fontFamily: 'Dosis'
 }
 
 const learnStylesTwo = {
   height: '170px',
+  paddingLeft: '50px',
   // width: '500px',
   // margin: '0 auto',
   // fontFamily: 'Dosis'
@@ -135,11 +138,14 @@ const learnImageStyles = {
 }
 
 const lessonPackagesStyles = {
-  // height: '290px',
-  // width: '500px',
+  height: '290px',
+  width: '500px',
   margin: '0 auto',
   display: 'flex',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  alignItems: 'space-evenly',
+  marginBottom: '100px',
+  paddingLeft: '50px'
 }
 
 // const option = {

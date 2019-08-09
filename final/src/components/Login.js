@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom'
 import { TextField, Button } from '@material-ui/core'
 import styled from 'styled-components'
 import Signup from '../containers/Signup';
+import './Login.css'
 
 const FlexForm = styled.form`
   margin: 50px;
@@ -46,22 +47,26 @@ class Login extends Component {
       )
     } else {
       return (
-        <div>
-          <FlexForm onSubmit={this.login}>
-            <TextField
-              onChange={this.handleTextChange}
-              id="userName"
-              label="Username"
-              value={this.state.userName}
-              variant="outlined" />
-            <TextField
-              onChange={this.handleTextChange}
-              id="password"
-              label="Password"
-              value={this.state.password}
-              variant="outlined" />
-            <Button type="submit" variant="contained">Login</Button>
-          </FlexForm>
+        <div id="poo">
+          <div id="moo">
+            <FlexForm onSubmit={this.login}>
+              <TextField
+                onChange={this.handleTextChange}
+                id="userName"
+                label="Username"
+                value={this.state.userName}
+                variant="outlined" 
+              />
+              <TextField
+                onChange={this.handleTextChange}
+                id="password"
+                label="Password"
+                value={this.state.password}
+                variant="outlined" 
+              />
+              <Button type="submit" variant="contained">Login</Button>
+            </FlexForm>
+          </div>
           {this.state.message && <RedSpan>{this.state.message}</RedSpan>}
           <Signup />
         </div>
