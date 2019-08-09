@@ -9,6 +9,10 @@ import five from '../final-img/paint5.PNG'
 import room1 from '../final-img/room1.png'
 import room2 from '../final-img/room2.png'
 import room3 from '../final-img/room3.png'
+import room4 from '../final-img/room4.png'
+import room5 from '../final-img/room5.png'
+import room4Detail from '../final-img/room4Detail.JPG'
+import room5Detail from '../final-img/room5Detail.JPG'
 import forCarloDetail from '../final-img/forCarloDetail.JPG'
 import forDad from '../final-img/forDad.PNG'
 import forDadDetail from '../final-img/forDadDetail.JPG'
@@ -16,6 +20,7 @@ import forNathaniel from '../final-img/forNathaniel.PNG'
 import forNathanielDetail from '../final-img/forNathanielDetail.PNG'
 import whale from '../final-img/whale.PNG'
 import whaleDetail from '../final-img/whaleDetail.jpg'
+
 
 
 const photos = [{
@@ -79,6 +84,26 @@ const photos = [{
     caption: "For Laurie",
     subcaption: "Acrylic, house paint and paper on canvas - 2012 ",
     thumbnail: whaleDetail,
+  },{
+    photo: room4,
+    caption: "Tally",
+    subcaption: "Acrylic, house paint and paper on canvas - 2012 ",
+    thumbnail: room4,
+  },{
+    photo: room4Detail,
+    caption: "Tally",
+    subcaption: "Acrylic, house paint and paper on canvas - 2012 ",
+    thumbnail: room4Detail,
+  },{
+    photo: room5,
+    caption: "Weathered",
+    subcaption: "Acrylic, house paint and paper on canvas - 2012 ",
+    thumbnail: room5,
+  },{
+    photo: room5Detail,
+    caption: "Weathered",
+    subcaption: "Acrylic, house paint and paper on canvas - 2012 ",
+    thumbnail: room5Detail,
   }
 ];
 
