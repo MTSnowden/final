@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
 // import { Redirect } from 'react-router-dom'
+import NewProject from './NewProject'
+
 import styled from 'styled-components'
 import { Card, CardHeader, CardContent, Button, TextField } from '@material-ui/core'
 
@@ -54,44 +56,47 @@ class Dashboard extends Component {
   render() {
     return (
       <Fragment>
-        <Button variant="contained" 
+        <Button variant="secondary" 
                 onClick={this.logout}>Logout</Button>
         <Wrapper>
           <Card>
             <CardHeader
-              title={`Welcome ${this.props.user.userName}!`}
-              subheader="I'm excited to be working wtih you!"
+              // title={`Welcome ${this.props.user.userName}!`}
+              title={`Hey Sparky!`}
+              subheader="Here's your list of active projects:"
             />
-            <CardContent>
+
+            
+            {/* <CardContent>
               <p>Username: {this.props.user.userName}</p>
               <p>Password: {this.props.user.password}</p>
-            </CardContent>
+            </CardContent> */}
+
+
           </Card>
-          <div>
-            <FlexForm onSubmit={this.updateUser}>
-              <p>Update username:</p>
+          <div style={right}>
+            <NewProject />
+
+            {/* <FlexForm onSubmit={this.updateUser}>
+              <p>New Project: </p>
               <TextField
                 onChange={this.handleUserChange}
                 label="Username"
                 value={this.state.userName}
                 variant="outlined" />
               <Button type="submit" variant="contained">Update</Button>
-            </FlexForm>
-            <FlexForm onSubmit={this.updatePass}>
-              <p>Update password:</p>
-              <TextField
-                onChange={this.handlePassChange}
-                label="Password"
-                value={this.state.password}
-                variant="outlined" />
-              <Button type="submit" variant="contained">Update</Button>
-            </FlexForm>
+            </FlexForm> */}
           </div>
         </Wrapper>
         {/* <Button variant="contained" onClick={this.logout}>Logout</Button> */}
       </Fragment>
     )
   }
+}
+
+const right = {
+  backgroundColor: 'tan',
+  // borderRadius: '12px'
 }
 
 export default Dashboard;

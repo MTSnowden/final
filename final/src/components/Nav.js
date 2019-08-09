@@ -8,7 +8,7 @@ const Nav = () => (
     <ul className="nav-left" style={styles}>
       <Link to='/' style={styles}>h o m e</Link>
       <Link to='/bio'>b i o</Link>
-      <Link to='/gallery'>g a l l e r y</Link>
+      <Link to='/gallery'>p o r t f o l i o</Link>
       <Link to='/learn'>l e a r n</Link>
     </ul>
 

@@ -20,7 +20,9 @@ const Learn = () => (
 
       <div className="learn-text-container">
         <div className="learn-flex" style={learnStylesOne}>
-          <p>I believe that anyone can learn to draw.
+          
+          <p>
+          <h5>I believe that anyone can learn to draw.</h5>
             Drawing is one of my favorite practices and I love helping others 
             take what they see and express that through their own hands.
             A classically trained artist and former high school 
@@ -49,6 +51,7 @@ const Learn = () => (
       </div>
 
       <div className="lesson-packages-container" style={lessonPackagesStyles}>
+        
         <Card style={{ width: '14rem', height: '12rem' }}>
           <Card.Body>
             <Card.Title>1 One Hour Lesson</Card.Title>

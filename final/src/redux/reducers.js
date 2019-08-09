@@ -13,6 +13,14 @@ const user = (state = {}, action) => {
   }
 }
 
+function projects(state = [], action) {
+  if (action.type === "PROJECTS_FETCHED") {
+    return action.value;
+  }
+  return state;
+}
+
 export default combineReducers({
-  user
+  user,
+  projects
 })

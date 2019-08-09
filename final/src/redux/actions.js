@@ -81,3 +81,57 @@ export function updatePassword(password) {
     .catch(err => Promise.reject(err))
   }  
 }
+
+
+
+
+export const fetchProjects = () => {
+  return dispatch => {
+      fetch("/projects")
+       .then(res => {
+        return res.json();
+      }).then(projects => {
+          dispatch(projectsFetched(projects));
+      });
+
+  };
+}
+
+export function projectsFetched(projects) {
+  return {
+    type: "PROJECTS_FETCHED",
+    value: projects
+  };
+}
+
+export const newProject = project =>  {
+  return dispatch => {   
+    fetch("/projects", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(project)
+  }).then(() => dispatch(fetchProjects(project)))
+        // }).then((projects) => {
+        //   dispatch(fetchProjects(projects));
+        // });
+}
+}
+
+export function deleteProject(id) {
+  return function (dispatch) {
+        
+    fetch(`/projects/${id}`, {
+      method: "DELETE"
+    }
+ )
+        .then( (response) => {
+          return response.json();
+        }).then(() => {
+          dispatch(fetchProjects());
+        });
+  
+  };
+
+}

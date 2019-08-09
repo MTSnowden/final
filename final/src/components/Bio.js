@@ -26,11 +26,13 @@ const Bio = () => (
             During my second year I departed from painting representational 
             images in oil on canvas and began to experiment with abstraction and mixed media painting.
             With this new direction came a new process of building the works. 
-            I was drawn to the process of producing the work itself. The act of making.
+            I abandoned the paintbrush and started using my bare hands.
+            I became very drawn to the act of making the work itself.
             At this time I wasn’t particularly concerned about <i>what</i> I was making, in terms of visual content,
-            as much as <i>how</i> I was making. I put all of my focus on how I interacted with the 
-            materials and the various ways I could manipulate them to create 
-            varied visual dialogues. Over time I deveolped my own unique language and system of production. 
+            as much as <i>how</i> I was making.  I told myself that
+            content would come in time. I put all of my focus on how I interacted with the 
+            materials. The various ways I could manipulate them to create 
+            my own unique visual style and language. 
           </p>
         </div>
         <div>

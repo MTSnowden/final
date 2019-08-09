@@ -1,3 +1,13 @@
-export default {
-    user: {}
+// module.exports =  {
+//     user: {},
+//     projects: []
+//   }
+
+
+  // ???
+  export default  {
+    user: {},
+    projects: []
   }
+
+  // added projects array here. not sure if thats right

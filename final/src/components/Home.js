@@ -4,6 +4,8 @@ import Signature from '../images/signature.png'
 import forCarlo from '../final-img/forCarlo.JPG'
 import './Home.css'
 
+
+
 const Home = () => (
   <div className="home-container">
     <div className="signature-flex">
@@ -22,6 +24,7 @@ const Home = () => (
     <div className="home-image">
         <img id="main-image" src={forCarlo} alt="abstract-painting"></img>
     </div>
+
   </div>
 )
 

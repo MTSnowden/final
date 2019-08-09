@@ -3,12 +3,17 @@ import ReactBnbGallery from 'react-bnb-gallery'
 // import forCarlo from '../final-img/forCarlo.JPG'
 import paint1 from '../final-img/paint1.JPG'
 // import two from '../final-img/paint2.JPG'
-import three from '../final-img/paint3.jpg'
+// import three from '../final-img/paint3.jpg'
 import four from '../final-img/paint4.PNG'
 import five from '../final-img/paint5.PNG'
 import room1 from '../final-img/room1.png'
 import room2 from '../final-img/room2.png'
 import room3 from '../final-img/room3.png'
+import forCarloDetail from '../final-img/forCarloDetail.JPG'
+import forDad from '../final-img/forDad.PNG'
+import forDadDetail from '../final-img/forDadDetail.JPG'
+import forNathaniel from '../final-img/forNathaniel.PNG'
+import forNathanielDetail from '../final-img/forNathanielDetail.PNG'
 
 
 const photos = [{
@@ -37,16 +42,37 @@ const photos = [{
     subcaption: "Acrylic, cement dye, cardboard, string and paper on canvas - 2012",
     thumbnail: room3,
   }, {
-    photo: three,
-    caption: "Central Park",
-    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
-    thumbnail: three,
-  },{
-    photo: four,
+    photo: forCarloDetail,
+    caption: "For Carlo",
+    subcaption: "Acrylic, cement dye, cardboard, string and paper on canvas - 2012",
+    thumbnail: forCarloDetail,
+  },
+  {
+    photo: forDad,
     caption: "For Dad",
     subcaption: "Acrylic, latex, paper, cardboard, silver leaf and string on canvas - 2013",
+    thumbnail: forDad,
+  },{
+    photo: forDadDetail,
+    caption: "For Dad",
+    subcaption: "Acrylic, latex, paper, cardboard, silver leaf and string on canvas - 2013",
+    thumbnail: forDadDetail,
+  }, {
+    photo: four,
+    caption: "Central Park",
+    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
     thumbnail: four,
-  }
+  },{
+    photo: forNathaniel,
+    caption: "Central Park",
+    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
+    thumbnail: forNathaniel,
+  },{
+    photo: forNathanielDetail,
+    caption: "Central Park",
+    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
+    thumbnail: forNathanielDetail,
+  },
 ];
 
 export default class PaintGallery extends Component {

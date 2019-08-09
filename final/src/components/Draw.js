@@ -3,6 +3,7 @@ import ReactBnbGallery from 'react-bnb-gallery'
 import draw1 from '../final-img/draw1.PNG'
 import draw2 from '../final-img/draw2.PNG'
 import draw3 from '../final-img/draw3.PNG'
+import wasp from '../final-img/wasp.jpg'
 
 
 const photos = [{
@@ -20,6 +21,11 @@ const photos = [{
     caption: "Interior",
     subcaption: "Charcoal on paper - 2012",
     thumbnail: draw3,
+  }, {
+    photo: wasp,
+    caption: "Embrace",
+    subcaption: "Charcoal on paper - 2012",
+    thumbnail: wasp,
   }]
 
 export default class DrawGallery extends Component {
