@@ -1,9 +1,9 @@
 import { connect } from "react-redux";
-import ListOfMovies from "../components/ListOfMovies";
-import {deleteMovie} from "../actions/index";
+import ListProjects from "../components/ListProjects";
+import {deleteProject} from "../redux/actions";
 
-const mapStateToProps = state => ({ movies: state.movies });
+const mapStateToProps = state => ({ projects: state.projects });
 
-const mapDispatchToProps = { deleteMovie: deleteMovie };
+const mapDispatchToProps = { deleteProject: deleteProject };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ListOfMovies);
+export default connect(mapStateToProps, mapDispatchToProps)(ListProjects);

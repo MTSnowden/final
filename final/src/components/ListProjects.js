@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const ListProjects = (props) => {
+const ListProjects = ({props = []}) => {
   
-    const projectDivs = props.projects.map((project,i) => {
+    const projectDivs = props.map((project,i) => {
      
       return (
         

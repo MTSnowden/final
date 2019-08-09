@@ -8,7 +8,7 @@ const Learn = () => (
   <div className="learn-container">
 
     <div className="learn-flex" style={titleStyles}>
-      <h3>Private Drawing Lessons</h3>
+    <h3>I believe that anyone can learn to draw.</h3>
     </div>
 
 
@@ -20,9 +20,7 @@ const Learn = () => (
 
       <div className="learn-text-container">
         <div className="learn-flex" style={learnStylesOne}>
-          
           <p>
-          <h5>I believe that anyone can learn to draw.</h5>
             Drawing is one of my favorite practices and I love helping others 
             take what they see and express that through their own hands.
             A classically trained artist and former high school 
@@ -70,7 +68,7 @@ const Learn = () => (
           </Card.Body>
         </Card>
 
-        <Card style={{ width: '14rem', height: '12rem' }}>
+        {/* <Card style={{ width: '14rem', height: '12rem' }}>
           <Card.Body>
             <Card.Title>5 One Hour Lessons</Card.Title>
             <Card.Title>$130</Card.Title>
@@ -78,21 +76,8 @@ const Learn = () => (
             <Button variant="secondary"
                     >Purchase</Button>
           </Card.Body>
-        </Card>
+        </Card> */}
 
-
-        {/* <div className="option" style={option}>
-          <h4>1 One-Hour Lesson</h4>
-          <h3>$30</h3>
-        </div>
-        <div className="option" style={option}>
-          <h4>3 One-Hour Lessons</h4>
-          <h3>$75</h3>
-        </div>
-        <div className="option" style={option}>
-          <h4>5 One-Hour Lessons</h4>
-          <h3>$130</h3>
-        </div> */}
       </div>
     </div>
 
@@ -104,6 +89,7 @@ const titleStyles = {
   width: '75%',
   fontFamily: 'Dosis',
   margin: '0 auto',
+  marginTop: '30px',
   marginBottom: '20px',
   paddingLeft: '40px'
 }

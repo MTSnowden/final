@@ -2,6 +2,7 @@ const express = require('express')
 const jwt = require('jsonwebtoken')
 const router = express.Router()
 const AuthController = require('../controllers/auth')
+const {list,show,create,remove,removeEmpty} = require( "../controllers/controllers");
 
 function isAuthenticated(req, res, next) {
   if (!req.cookies.id_token) {
@@ -38,5 +39,11 @@ router.put("/password", isAuthenticated, (req, res) => {
     res.send("password updated papi")
   );
 });
+
+router.get("/projects", list);
+router.get("/projects/:id", show);
+router.post("/projects", create);
+router.delete("/projects/:id", remove);
+router.delete("/projects/empty", removeEmpty);
 
 module.exports = router

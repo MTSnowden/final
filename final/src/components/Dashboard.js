@@ -1,20 +1,21 @@
 import React, { Component, Fragment } from 'react'
 // import { Redirect } from 'react-router-dom'
 import NewProject from './NewProject'
+import ListProjects from './ListProjects'
 
 import styled from 'styled-components'
-import { Card, CardHeader, CardContent, Button, TextField } from '@material-ui/core'
+import { Card, CardHeader, CardContent, Button} from '@material-ui/core'
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
 `
 
-const FlexForm = styled.form`
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-`
+// const FlexForm = styled.form`
+//   margin: 50px;
+//   display: flex;
+//   flex-direction: column;
+// `
 
 class Dashboard extends Component {
   state = {
@@ -65,28 +66,13 @@ class Dashboard extends Component {
               title={`Hey Sparky!`}
               subheader="Here's your list of active projects:"
             />
-
-            
-            {/* <CardContent>
-              <p>Username: {this.props.user.userName}</p>
-              <p>Password: {this.props.user.password}</p>
-            </CardContent> */}
-
-
+            <CardContent>
+              <ListProjects />
+            </CardContent>
           </Card>
-          <div style={right}>
-            <NewProject />
-
-            {/* <FlexForm onSubmit={this.updateUser}>
-              <p>New Project: </p>
-              <TextField
-                onChange={this.handleUserChange}
-                label="Username"
-                value={this.state.userName}
-                variant="outlined" />
-              <Button type="submit" variant="contained">Update</Button>
-            </FlexForm> */}
-          </div>
+            <div style={right}>
+              <NewProject />
+            </div>
         </Wrapper>
         {/* <Button variant="contained" onClick={this.logout}>Logout</Button> */}
       </Fragment>

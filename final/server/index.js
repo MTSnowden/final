@@ -2,11 +2,13 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const mongoose = require('mongoose')
-const AuthRoutes = require('./express/routes/auth')
+const router = require('./express/controllers/auth')
+
 
 mongoose.connect('mongodb+srv://admin:admin@cluster0-vbnzk.mongodb.net/test?retryWrites=true&w=majority')
+app.use(router)
 
-const port = process.env.PORT || 4001
+
 const app = express()
 
 if (process.env.NODE_ENV === "production") {
@@ -15,10 +17,13 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(bodyParser.json())
 app.use(cookieParser())
-app.use('/auth', AuthRoutes)
 
-app.get('/', (req, res) => res.send('Default route!'))
 
+
+app.get('/', (req, res) => res.send('Default route!!!!'))
+
+
+const port = process.env.PORT || 4001
 app.listen(port, () => {
   console.log(`Express app running on localhost:${port}`)
 })

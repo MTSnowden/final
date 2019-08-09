@@ -14,6 +14,8 @@ import forDad from '../final-img/forDad.PNG'
 import forDadDetail from '../final-img/forDadDetail.JPG'
 import forNathaniel from '../final-img/forNathaniel.PNG'
 import forNathanielDetail from '../final-img/forNathanielDetail.PNG'
+import whale from '../final-img/whale.PNG'
+import whaleDetail from '../final-img/whaleDetail.jpg'
 
 
 const photos = [{
@@ -58,21 +60,26 @@ const photos = [{
     subcaption: "Acrylic, latex, paper, cardboard, silver leaf and string on canvas - 2013",
     thumbnail: forDadDetail,
   }, {
-    photo: four,
-    caption: "Central Park",
-    subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
-    thumbnail: four,
-  },{
     photo: forNathaniel,
-    caption: "Central Park",
+    caption: "For Nathaniel",
     subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
     thumbnail: forNathaniel,
   },{
     photo: forNathanielDetail,
-    caption: "Central Park",
+    caption: "For Nathaniel",
     subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
     thumbnail: forNathanielDetail,
-  },
+  },{
+    photo: whale,
+    caption: "For Laurie",
+    subcaption: "Acrylic, house paint and paper on canvas - 2012 ",
+    thumbnail: whale,
+  },{
+    photo: whaleDetail,
+    caption: "For Laurie",
+    subcaption: "Acrylic, house paint and paper on canvas - 2012 ",
+    thumbnail: whaleDetail,
+  }
 ];
 
 export default class PaintGallery extends Component {
