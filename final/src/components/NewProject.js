@@ -15,54 +15,80 @@ class NewProject extends Component {
 
     render(){
         return(
-            <div>
-                <h1>New Project</h1>
+            <div className="NewProjectDiv" >
+                <h3>New Project</h3>
+                <div className="inputDiv" style={style}>
                 <form onSubmit={(e) => {
                     e.preventDefault();
                 if (this.props.newProject) {
                     this.props.newProject(this.state);
                     }
                 }}>
+
                 <div>
-                Client: <input onChange={(e) => {
-                    this.setState({
-                        title: e.target.value
-                    });
-                }} />
+                    <div>Client:</div>
+                    <div>
+                     <input onChange={(e) => {
+                        this.setState({
+                            client: e.target.value
+                        });
+                     }} />
+                    </div>
                 </div>
+
                 <div>
-                Title: <input onChange={(e) => {
-                    this.setState({
-                        director: e.target.value
-                    });
-                }} />
+                    <div>Title:</div>
+                    <div>
+                     <input onChange={(e) => {
+                        this.setState({
+                            title: e.target.value
+                        });
+                     }} />
+                    </div> 
                 </div>
+
                 <div>
-                Description: <input onChange={(e) => {
-                    this.setState({
-                        genre: e.target.value
-                    });
-                }} />
+                    <div>Description:</div>
+                    <div>
+                     <input onChange={(e) => {
+                        this.setState({
+                            description: e.target.value
+                        });
+                     }} />
+                    </div> 
                 </div>
+
                 <div>
-                Charge: <input onChange={(e) => {
-                    this.setState({
-                        year: e.target.value
-                    });
-                }} /> 
+                    <div>Charge:</div>
+                    <div>
+                     <input onChange={(e) => {
+                        this.setState({
+                            charge: e.target.value
+                        });
+                     }} />
+                    </div> 
                 </div>
+
                 <div>
-                Due: <input onChange={(e) => {
-                    this.setState({
-                        year: e.target.value
-                    });
-                }} /> 
+                    <div>Due:</div>
+                    <div>
+                     <input onChange={(e) => {
+                        this.setState({
+                            due: e.target.value
+                        });
+                     }} />
+                    </div> 
                 </div>
                 <button type="submit">Create</button>
                 </form>
+                </div>
             </div>
         )
     }
+}
+
+const style = {
+    display: 'flex'
 }
 
 export default NewProject;

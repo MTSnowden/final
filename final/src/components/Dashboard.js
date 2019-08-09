@@ -11,12 +11,6 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
-// const FlexForm = styled.form`
-//   margin: 50px;
-//   display: flex;
-//   flex-direction: column;
-// `
-
 class Dashboard extends Component {
   state = {
     expanded: false,
@@ -81,8 +75,10 @@ class Dashboard extends Component {
 }
 
 const right = {
-  backgroundColor: 'tan',
-  // borderRadius: '12px'
+  backgroundColor: 'lightGrey',
+  height: '450px',
+  width: '280px',
+  padding: '50px',
 }
 
 export default Dashboard;
