@@ -7,6 +7,11 @@ import wasp from '../final-img/wasp.jpg'
 
 
 const photos = [{
+    photo: wasp,
+    caption: "Embrace",
+    subcaption: "Charcoal on paper - 2012",
+    thumbnail: wasp,
+  },{
     photo:  draw1,
     caption: "Autry-Williams Wigwam",
     subcaption: "Charcoal on paper - 2012",
@@ -21,11 +26,6 @@ const photos = [{
     caption: "Interior",
     subcaption: "Charcoal on paper - 2012",
     thumbnail: draw3,
-  }, {
-    photo: wasp,
-    caption: "Embrace",
-    subcaption: "Charcoal on paper - 2012",
-    thumbnail: wasp,
   }]
 
 export default class DrawGallery extends Component {

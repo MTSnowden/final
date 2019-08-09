@@ -4,7 +4,7 @@ const { Auth, projectSchema } = require('./schemas')
 
 const AuthModel = mongoose.model('Auth', Auth, 'auth')
 
-const ProjectModel = mongoose.model("Project", projectSchema);
+const ProjectModel = mongoose.model("Project", projectSchema, 'project');
 
 module.exports = {
   AuthModel,

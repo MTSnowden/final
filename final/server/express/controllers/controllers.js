@@ -1,4 +1,4 @@
-const ProjectsModel = require("../../mongo/");
+const { ProjectsModel } = require("../../mongo/models");
 
 module.exports.list = (req, res) => {
   ProjectsModel.find({}).then(projects => { 

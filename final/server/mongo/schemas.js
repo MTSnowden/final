@@ -7,21 +7,11 @@ const Auth = new Schema({
 })
 
 const projectSchema = new Schema({
-  client: {
-      type: String
-  },
-  title: {
-      type: String
-  },
-  description: {
-      type: String
-  },
-  charge: {
-      type: String
-  },
-  due: {
-    type: String
-}
+  client: String,
+  title: String,
+  description: String,
+  charge: String,
+  due: String,
 });
 
 module.exports = { Auth, projectSchema }

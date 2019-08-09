@@ -2,11 +2,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const mongoose = require('mongoose')
-const router = require('./express/controllers/auth')
+const router = require('./express/routes/auth')
 
 
 mongoose.connect('mongodb+srv://admin:admin@cluster0-vbnzk.mongodb.net/test?retryWrites=true&w=majority')
-app.use(router)
+// MongoClient.connect({ useNewUrlParser: true })
 
 
 const app = express()
@@ -16,6 +16,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use(bodyParser.json())
+app.use('/', router)
 app.use(cookieParser())
 
 
