@@ -38,6 +38,7 @@ class Login extends Component {
   render() {
     console.log(this.state.message)
     // console.log(this.props.user)
+    // changed this to !this
     if (!this.props.user) {
 
       return (
