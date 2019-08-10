@@ -5,8 +5,9 @@ const mongoose = require('mongoose')
 const router = require('./express/routes/auth')
 
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0-vbnzk.mongodb.net/test?retryWrites=true&w=majority')
-// MongoClient.connect({ useNewUrlParser: true })
+mongoose.connect('mongodb+srv://admin:admin@cluster0-vbnzk.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true })
+  .then(()=>console.log('mongoDB connected'))
+  .catch(err => console.log(err))
 
 
 const app = express()
@@ -28,4 +29,3 @@ const port = process.env.PORT || 4001
 app.listen(port, () => {
   console.log(`Express app running on localhost:${port}`)
 })
-

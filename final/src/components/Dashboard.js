@@ -54,14 +54,16 @@ class Dashboard extends Component {
         <Button variant="secondary" 
                 onClick={this.logout}>Logout</Button>
         <Wrapper>
-          <Card>
+          <Card  style={left}>
             <CardHeader
               // title={`Welcome ${this.props.user.userName}!`}
               title={`Hey Sparky!`}
               subheader="Here's your list of active projects:"
             />
             <CardContent>
-              <ListProjects />
+              <div>
+                <ListProjects />
+              </div>
             </CardContent>
           </Card>
             <div style={right}>
@@ -81,4 +83,10 @@ const right = {
   padding: '50px',
 }
 
+const left = {
+  backgroundColor: 'tan',
+  height: '450px',
+  width: '280px',
+  // padding: '35px',
+}
 export default Dashboard;

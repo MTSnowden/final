@@ -19,7 +19,12 @@ import { setUser } from './redux/actions'
 
 
 class App extends Component {
+
+  
   componentDidMount() {
+    fetch("/")
+    .then(res => res.text())
+    .then(text => console.log(text))
     const cookies = cookie.parse(document.cookie)
     if (cookies.id_token) {
       const payload = jwt.verify(cookies.id_token, 'secret')

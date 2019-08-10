@@ -6,7 +6,7 @@ const Auth = new Schema({
   password: String
 })
 
-const projectSchema = new Schema({
+const projectsSchema = new Schema({
   client: String,
   title: String,
   description: String,
@@ -14,4 +14,4 @@ const projectSchema = new Schema({
   due: String,
 });
 
-module.exports = { Auth, projectSchema }
+module.exports = { Auth, projectsSchema }

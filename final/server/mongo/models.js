@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
-const { Auth, projectSchema } = require('./schemas')
+const { Auth, projectsSchema } = require('./schemas')
 
 
 const AuthModel = mongoose.model('Auth', Auth, 'auth')
 
-const ProjectModel = mongoose.model("Project", projectSchema, 'project');
+const ProjectsModel = mongoose.model("Project", projectsSchema, 'project');
 
 module.exports = {
   AuthModel,
-  ProjectModel
+  ProjectsModel
 }

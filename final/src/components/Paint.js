@@ -53,13 +53,12 @@ const photos = [{
     caption: "For Carlo",
     subcaption: "Acrylic, cement dye, cardboard, string and paper on canvas - 2012",
     thumbnail: forCarloDetail,
-  },
-  {
+  }, {
     photo: forDad,
     caption: "For Dad",
     subcaption: "Acrylic, latex, paper, cardboard, silver leaf and string on canvas - 2013",
     thumbnail: forDad,
-  },{
+  }, {
     photo: forDadDetail,
     caption: "For Dad",
     subcaption: "Acrylic, latex, paper, cardboard, silver leaf and string on canvas - 2013",
@@ -69,7 +68,7 @@ const photos = [{
     caption: "For Nathaniel",
     subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
     thumbnail: forNathaniel,
-  },{
+  }, {
     photo: forNathanielDetail,
     caption: "For Nathaniel",
     subcaption: "Acrylic, house paint, paper, cardboard and string on canvas - 2012 ",
