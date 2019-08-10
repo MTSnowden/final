@@ -1,24 +1,30 @@
 import React, { Component } from 'react'
 import ReactBnbGallery from 'react-bnb-gallery'
-import draw1 from '../final-img/draw1.PNG'
-import draw2 from '../final-img/draw2.PNG'
-import draw3 from '../final-img/draw3.PNG'
+import draw1 from '../final-img/draw1.jpg'
+import draw1Detail from '../final-img/draw1Detail.png'
+import draw2 from '../final-img/draw2.jpg'
+import draw3 from '../final-img/draw3.jpg'
 import wasp from '../final-img/wasp.jpg'
 
 
 const photos = [{
     photo: wasp,
-    caption: "Embrace",
-    subcaption: "Charcoal on paper - 2012",
+    caption: "Embrace the pain",
+    subcaption: "Charcoal on paper - 2017",
     thumbnail: wasp,
   },{
     photo:  draw1,
-    caption: "Autry-Williams Wigwam",
+    caption: "Impending Doom",
     subcaption: "Charcoal on paper - 2012",
     thumbnail: draw1,
+  },{
+    photo:  draw1Detail,
+    caption: "Impending Doom - detail",
+    subcaption: "Charcoal on paper - 2012",
+    thumbnail: draw1Detail,
   }, {
     photo: draw2,
-    caption: "Impending Doom",
+    caption: "Autry-Williams Wigwam",
     subcaption: "Charcoal on paper - 2012",
     thumbnail: draw2,
   }, {

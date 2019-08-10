@@ -10,7 +10,7 @@ import Learn from './components/Learn'
 import Login from './components/Login'
 import Paint from './components/Paint'
 import Dashboard from './containers/Dashboard'
-// import Contact from './components/Contact'
+import Contact from './components/Contact'
 import ListProjects from './containers/ListProjects'
 import NewProject from './containers/NewProject'
 import ProjectDetail from './containers/ProjectDetail'
@@ -43,7 +43,7 @@ const Router = () => {
             <Route path="/projects" component={ListProjects} />
             <Route path="/create" component={NewProject} />
             <Route path="/projects/:id" component={ProjectDetail} />
-            {/* <Route path='/contact' component={Contact}></Route> */}
+            <Route path='/contact' component={Contact}></Route>
         </Switch>
     );
 }

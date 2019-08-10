@@ -49,24 +49,27 @@ const Learn = () => (
       </div>
 
       <div className="lesson-packages-container" style={lessonPackagesStyles}>
-        
-        <Card style={{ width: '14rem', height: '12rem' }}>
+        <div style={left}>
+        <Card style={{ width: '10rem', height: '12rem' }}>
           <Card.Body>
-            <Card.Title>1 One Hour Lesson</Card.Title>
-            <Card.Title>$30</Card.Title>
+            <Card.Title style={{ fontSize: '30px'}}><b>1</b> Session</Card.Title>
+            <Card.Title>(60 min)</Card.Title>
+            <Card.Title>$50</Card.Title>
               <Card.Text></Card.Text>
             <Button variant="secondary">Purchase</Button>
           </Card.Body>
         </Card>
-
-         <Card style={{ width: '14rem', height: '12rem' }}>
+        </div>
+          <div>
+         <Card style={{ width: '11rem', height: '12rem' }}>
           <Card.Body>
-            <Card.Title>3 One Hour Lessons</Card.Title>
-            <Card.Title>$75</Card.Title>
+          <Card.Title style={{ fontSize: '30px'}}><b>3</b> Sessions</Card.Title>
+            <Card.Title>(180 min)</Card.Title>
+            <Card.Title>$130</Card.Title>
               <Card.Text></Card.Text>
             <Button variant="secondary">Purchase</Button>
           </Card.Body>
-        </Card>
+        </Card></div>
 
         {/* <Card style={{ width: '14rem', height: '12rem' }}>
           <Card.Body>
@@ -137,11 +140,9 @@ const lessonPackagesStyles = {
   paddingLeft: '50px'
 }
 
-// const option = {
-//   height: '200px',
-//   width: '200px',
-//   border: '2px solid grey'
-// }
+const left = {
+  marginRight: '50px'
+}
 
 
 export default Learn

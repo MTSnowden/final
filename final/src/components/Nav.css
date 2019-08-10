@@ -52,6 +52,9 @@ ul a {
     float: right;
     /* align-items: flex-end; */
     justify-content: flex-end;
+    /* justify-content: space-evenly; */
+
+    
     padding-right: 100px;
 } 
 
