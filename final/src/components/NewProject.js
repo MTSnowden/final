@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { newProject } from '../redux/actions'
 
 
 class NewProject extends Component {
@@ -12,7 +13,10 @@ class NewProject extends Component {
             due: ""
         };
     }
-
+onSubmitHandler(e){
+    e.preventDefault()
+    newProject(this.state)
+}
     render(){
         return(
             <div className="NewProjectDiv" >
@@ -79,7 +83,7 @@ class NewProject extends Component {
                      }} />
                     </div> 
                 </div>
-                <button type="submit">Create</button>
+                <button onclick={(e)=>this.onSubmitHandler(e)} type="submit">Create</button>
                 </form>
                 </div>
             </div>

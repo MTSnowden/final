@@ -85,16 +85,12 @@ export function updatePassword(password) {
 
 
 
-export const fetchProjects = () => {
-  return dispatch => {
-      fetch("/projects")
-       .then(res => {
-        return res.json();
-      }).then(projects => {
-          dispatch(projectsFetched(projects));
-      });
-
-  };
+export const fetchProjects = dispatch =>{
+  fetch("/projects")
+  .then(res => res.json())
+  .then(projects => {
+     dispatch(projectsFetched(projects));
+ });
 }
 
 export function projectsFetched(projects) {
@@ -104,19 +100,24 @@ export function projectsFetched(projects) {
   };
 }
 
-export const newProject = project =>  {
-  return dispatch => {   
-    fetch("/projects", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(project)
-  }).then(() => dispatch(fetchProjects(project)))
+export function newProject() {
+    return function dispatch(){
+      return{
+      type: "PROJECTS_FETCHED",
+      value:{ test: 'testing'}
+      }
+//   fetch("/projects", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json"
+//     },
+//     body: JSON.stringify(project)
+// }).then(() => dispatch(fetchProjects(project)))  
+
         // }).then((projects) => {
         //   dispatch(fetchProjects(projects));
         // });
-}
+  }
 }
 
 export function deleteProject(id) {

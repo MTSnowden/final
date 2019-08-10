@@ -2,13 +2,14 @@ import React from 'react'
 import Hand from '../final-img/drawing-hand.png'
 import './Learn.css'
 import { Card, Button  } from 'react-bootstrap'
-// 
+import { Link } from 'react-router-dom'
+ 
 
 const Learn = () => (
   <div className="learn-container">
 
     <div className="learn-flex" style={titleStyles}>
-    <h3>I believe that anyone can learn to draw.</h3>
+    <h2>I believe that anyone can learn to draw.</h2>
     </div>
 
 
@@ -24,7 +25,7 @@ const Learn = () => (
             Drawing is one of my favorite practices and I love helping others 
             take what they see and express that through their own hands.
             A classically trained artist and former high school 
-            art educator, I teach traditional methods of 
+            art teacher, I offer private lessons in traditional methods of 
             representational drawing. 
           </p>
         </div>
@@ -40,10 +41,6 @@ const Learn = () => (
             I will give lessons on perspective, line, 
             volume, and composition in a way that is practical 
             and easy to understand. 
-            
-            {/* We will explore the science of 
-            optics and how our eyes work with the brain to make sense 
-            of the phisical world around us. */}
           </p>
         </div>
       </div>
@@ -56,10 +53,11 @@ const Learn = () => (
             <Card.Title>(60 min)</Card.Title>
             <Card.Title>$50</Card.Title>
               <Card.Text></Card.Text>
-            <Button variant="secondary">Purchase</Button>
+            <Link to='/contact'><Button variant="secondary">Purchase</Button></Link>
           </Card.Body>
         </Card>
         </div>
+
           <div>
          <Card style={{ width: '11rem', height: '12rem' }}>
           <Card.Body>
@@ -67,30 +65,21 @@ const Learn = () => (
             <Card.Title>(180 min)</Card.Title>
             <Card.Title>$130</Card.Title>
               <Card.Text></Card.Text>
-            <Button variant="secondary">Purchase</Button>
+            <Link to='/contact'><Button variant="secondary">Purchase</Button></Link>
           </Card.Body>
         </Card></div>
-
-        {/* <Card style={{ width: '14rem', height: '12rem' }}>
-          <Card.Body>
-            <Card.Title>5 One Hour Lessons</Card.Title>
-            <Card.Title>$130</Card.Title>
-              <Card.Text></Card.Text>
-            <Button variant="secondary"
-                    >Purchase</Button>
-          </Card.Body>
-        </Card> */}
-
+      
       </div>
     </div>
 
   </div>
 )
 
+
+
 const titleStyles = {
   display: 'flex',
   width: '75%',
-  fontFamily: 'Dosis',
   margin: '0 auto',
   marginTop: '30px',
   marginBottom: '20px',
@@ -98,7 +87,6 @@ const titleStyles = {
 }
 
 const learnBodyStyles = {
-  // display: 'flex'
   height: '80px',
   width: '600px',
   margin: '0 auto',
@@ -107,25 +95,16 @@ const learnBodyStyles = {
 }
 
 const learnStylesOne = {
-  // height: '130px',
-  // width: '500px',
-  // margin: '0 auto',
   paddingLeft: '50px',
-  marginTop: '50px',
-  // fontFamily: 'Dosis'
+  marginTop: '50px'
 }
 
 const learnStylesTwo = {
   height: '170px',
-  paddingLeft: '50px',
-  // width: '500px',
-  // margin: '0 auto',
-  // fontFamily: 'Dosis'
+  paddingLeft: '50px'
 }
 
 const learnImageStyles = {
-  // height: '290px',
-  // width: '500px',
   margin: '0 auto'
 }
 

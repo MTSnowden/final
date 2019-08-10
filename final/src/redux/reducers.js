@@ -17,7 +17,7 @@ function projects(state = [], action) {
   if (action.type === "PROJECTS_FETCHED") {
     return action.value;
   }
-  return state;
+  return [...state, action.value];
 }
 
 export default combineReducers({

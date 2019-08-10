@@ -39,11 +39,12 @@ const Router = () => {
             <Route path='/learn' component={Learn}></Route>
             <Route path='/login' component={Login}></Route>
             <Route path='/paint' component={Paint}></Route>
+            <Route path='/contact' component={Contact}></Route>
 
             <Route path="/projects" component={ListProjects} />
             <Route path="/create" component={NewProject} />
             <Route path="/projects/:id" component={ProjectDetail} />
-            <Route path='/contact' component={Contact}></Route>
+
         </Switch>
     );
 }

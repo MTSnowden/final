@@ -1,6 +1,7 @@
 const { ProjectsModel } = require("../../mongo/models");
 
 module.exports.list = (req, res) => {
+  console.log(req)
   ProjectsModel.find({}).then(projects => { 
       return res.json(projects)
     });

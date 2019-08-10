@@ -3,14 +3,14 @@ import {Link} from 'react-router-dom'
 
 const ListProjects = ({props = []}) => {
   
-    const projectDivs = props.map((projects,i) => {
+    const projectDivs = props.map((project,i) => {
      
       return (
         
         <div key={i}>
-          {projects.title}
-         <Link to={"/projects/" + projects._id}><button>View</button> </Link>
-          <button onClick={() => {props.deleteProject(projects._id)}}>Delete</button>
+          {project.title}
+         <Link to={"/projects/" + project._id}><button>View</button> </Link>
+          <button onClick={() => {props.deleteProject(project._id)}}>Delete</button>
         </div>);
     });
     return (   

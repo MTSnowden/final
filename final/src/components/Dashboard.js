@@ -86,7 +86,7 @@ class Dashboard extends Component {
 
 const right = {
   backgroundColor: 'lightGrey',
-  height: '450px',
+  height: '750px',
   width: '280px',
   padding: '50px',
 }
