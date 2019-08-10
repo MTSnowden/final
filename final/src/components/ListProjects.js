@@ -9,7 +9,7 @@ const ListProjects = ({props = []}) => {
         
         <div key={i}>
           {project.title}
-         <Link to={"/project/" + project._id}><button>View</button> </Link>
+         <Link to={"/projects/" + project._id}><button>View</button> </Link>
           <button onClick={() => {props.deleteProject(project._id)}}>Delete</button>
         </div>);
     });

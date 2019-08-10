@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
-// import { Redirect } from 'react-router-dom'
-import NewProject from './NewProject'
+import DashButtons from './DashButtons'
+import DashRouter from '../DashRouter'
+import {BrowserRouter} from "react-router-dom";
 import ListProjects from './ListProjects'
 
 import styled from 'styled-components'
@@ -61,13 +62,20 @@ class Dashboard extends Component {
               subheader="Here's your list of active projects:"
             />
             <CardContent>
+
               <div>
-                <ListProjects />
+              {/* <Link to="/projects"><button type="button" className="btn btn-secondary">Show Projects</button></Link> */}
+                <BrowserRouter>
+                <DashButtons />
+                <DashRouter />
+                </BrowserRouter>
+                {/* <ListProjects /> */}
               </div>
             </CardContent>
           </Card>
             <div style={right}>
-              <NewProject />
+              {/* <NewProject /> */}
+              <ListProjects />
             </div>
         </Wrapper>
         {/* <Button variant="contained" onClick={this.logout}>Logout</Button> */}
@@ -85,7 +93,7 @@ const right = {
 
 const left = {
   backgroundColor: 'tan',
-  height: '450px',
+  height: '750px',
   width: '280px',
   // padding: '35px',
 }

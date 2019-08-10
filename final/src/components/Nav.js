@@ -13,7 +13,7 @@ const Nav = () => (
     </ul>
 
     <ul className="nav-right">
-      <Link to='/login'>c l i e n t   p o r t a l</Link>
+      <Link to='/login'>a d m i n</Link>
     </ul>
 
   </div>

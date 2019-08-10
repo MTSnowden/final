@@ -42,7 +42,7 @@ const Router = () => {
 
             <Route path="/projects" component={ListProjects} />
             <Route path="/create" component={NewProject} />
-            <Route path="/movie/:id" component={ProjectDetail} />
+            <Route path="/projects/:id" component={ProjectDetail} />
             {/* <Route path='/contact' component={Contact}></Route> */}
         </Switch>
     );
